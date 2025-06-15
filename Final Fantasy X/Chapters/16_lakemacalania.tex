@@ -62,6 +62,7 @@
             }
             \item Agi+2, HP+200, Str+4
             \item Move $\leftarrow$ to Str node Luftlinie left
+            \item 24 Power Spheres, 11 Speed Sphere to stop farming them
             \item Str+4
         \end{itemize}
         \ifthenelse{\equal{\blitzresult}{win}}{%
@@ -151,10 +152,10 @@
         \begin{itemize}
             \item Move $\leftarrow\leftarrow\leftarrow\leftarrow$ to empty node on new circle
             \item HP+200, Str+4
-            \item Check Power Spheres (need 21)
+            \item Check Power Spheres (need 21 after those two)
             \item Move $\leftarrow$ to empty node on top of circle
+            \item Check Speed Spheres (need 11 before the next)
             \item Agi+2
-            \item Check Speed Spheres (need 10)
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/Tidus_Post_Seymour}
     \end{itemize}
@@ -193,14 +194,6 @@
     \item Move south and go down the left path.
     \blitzballdetermination[true]{%
         \item Try to not get caught by the Guados chasing you, if you get caught Flee
-        \item If you need spheres:
-        \begin{encounters}
-            \begin{itemize}
-                \tidusf Attack Guado, then Surviving Enemies
-                \rikkuf Silence Grenade
-                \kimahrif Defend
-            \end{itemize}
-        \end{encounters}
     }{%
         \item Intentionally get caught by a Guado, kill the enemies to gain AP on Tidus
         \begin{encounters}
@@ -211,7 +204,15 @@
             \end{itemize}
         \end{encounters}
     }
+\item If you need Spheres and you have Lightning Marbles left, farm Wolves for Power and Bats for Speed Spheres
 \end{enumerate}
+\begin{encounters}
+    \begin{itemize}
+        \item \textit{If there are Evil Eyes (big bats) or Snow Wolfes:}
+            \rikkuf Use Lightning Marble
+            \tidusf Flee
+    \end{itemize}
+\end{encounters}
 \bothcb
 \blitzballdetermination{}{
     \begin{spheregrid}
