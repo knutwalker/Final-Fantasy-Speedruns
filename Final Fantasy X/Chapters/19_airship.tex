@@ -1,33 +1,47 @@
 \chapter{Airship}
 
 \begin{enumerate}
-    \item \sd\ during \cs+3 \skippablefmv. Walk down corridor to the next screen, go back in, \sd. Speak to Brother, \sd. Walk towards corridor, \sd. Walk towards camera to the next screen, go up.
-    \item If you need more than 4 Power Spheres or any Speed Spheres, buy Distillers from Rin, each one counts as 2 Spheres (need 28 Power Spheres and 10 Speed Spheres for the rest of the run).
-    \item \save. Make sure that \rikku\ has \od. If she doesn't, you can get encounters on Rin's first screen.
+    \item Exit bridge, go back in, Speak to Brother, Exit bridge again, go up, go outside.
+    \item Need 28 Power Spheres and 10 Speed Spheres for the rest of the run
+    \item if you need Speed SPheres or more than 4 Power Spheres, buy Distillers from Rin
+    \item Each Distiller is worth 2 Spheres
+    \item Make sure that \rikku\ has \od (after Crawler). If she doesn't, you can get encounters on Rin's first screen.
+    \item \save
 \end{enumerate}
 \begin{battle}[32000]{Evrae}
     Turns in this fight can be a bit random at times - Treat each character independantly of each other, doing their action as their turn comes up.
+    The important parts of this fight are:
+    \begin{enumerate}
+        \item \rikku\ must do her \od\ before \tidus\ starts attacking
+        \item \tidus\ only needs to be healed after the first attack
+        \blitzballdetermination[true]{}{%
+        \item \rikku\ or \kimahri\ must Lunar Curtain \tidus\ before Poison Breath
+        }
+    \end{enumerate}
+    Fight strategy:
     \begin{itemize}
         \blitzballdetermination[true]{%
             \tidusf Haste \tidus
-            \tidusf Cheer
-            \tidusf If \tidus\ is still going next, immediately after his previous action, Change Weapon to Sonic Steel
+            \tidusf Cheer, then Change Armor until \rikku\ got her turn (Rule 1.)
             \rikkuf \od\ Mix Luck Sphere + Map
+            \enemyf Attack, If it hits \rikku\ her \od\ is now filled
             \tidusf Attack x2
+            \item \kimahri\ or \rikku: Heal \tidus\ with an Elixir/X-Potion/Mega-Potion, or Steal
+            \enemyf Attack, If it hits \rikku\ her \od\ is now filled
             \tidusf Cheer
             \tidusf Attack x3
-            \item \kimahri\ or \rikku: Heal \tidus\ with an Elixir/X-Potion/Mega-Potion if he was hit in the first attack, Steal otherwise
+            \item \kimahri\ or \rikku: Steal
         }{%
             \tidusf Haste \tidus
             \tidusf Cheer x2
             \tidusf Equip Baroque Sword [Strength +5\%, -]
-            \tidusf Attack x6
             \rikkuf \od\ Mix Luck Sphere + Map
+            \enemyf Attack, If it hits \rikku\ her \od\ is now filled
+            \tidusf Attack x5
             \item \kimahri\ or \rikku: Heal \tidus\ with an Elixir/X-Potion/Mega-Potion, Lunar Curtain \tidus\ or Steal
+            \enemyf Haste, Inhale, Poison Breath
+            \tidusf Attack
         }
     \end{itemize}
 \end{battle}
-\begin{enumerate}[resume]
-    \item \sd, \skippablefmv[3:00] - Press Start immediately after the FMV.
-\end{enumerate}
 \wincb

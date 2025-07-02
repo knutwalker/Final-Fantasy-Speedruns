@@ -1,16 +1,18 @@
 \chapter{Lake Macalania}
-
 \begin{enumerate}
-    \item Run up and \sd
+    \item Run up, past the shop, down the path
 \end{enumerate}
 \begin{battle}[16000]{Crawler}
     \begin{itemize}
         \switch{\tidus}{\rikku}
-        \rikkuf Lightning Marble x1/2 Negator (1\,000 HP)
+        \rikkuf Lightning Marble x1/2x Negator (1\,000 HP)
         \rikkuf Lightning Marble Crawler
+        \enemyf Counter kills \rikku
         \kimahrif Lightning Marble Crawler
+        \enemyf Counter kills \kimahri
         \luluf Phoenix Down \rikku
         \rikkuf Lightning Marble Crawler
+        \enemyf Counter kills \rikku
         \ifthenelse{\equal{\blitzresult}{win}}{%
             \switch{\lulu}{\yuna}
             \yunaf Mega Phoenix
@@ -37,28 +39,29 @@
     \begin{itemize}
         \kimahrif (12 S.Lvl)
         \begin{itemize}
-            \item Move $\downarrow\downarrow\downarrow\downarrow$ on the Luck node
+            \item Move $\downarrow\downarrow\downarrow\downarrow$ to the Luck node
             \item HP +200, Agi+4
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/macalania_kimahri}
         \tidusf (22 S.Lvl)
         \begin{itemize}
             \item Level 2 Key Sphere
-            \item Move $\rightarrow\uparrow$
+            \item Move $\rightarrow\uparrow$ to Mental Break node
             \item Str +4
-            \item Move $\uparrow\uparrow$
+            \item Move $\uparrow\uparrow$ to HP node
             \item HP+200
-            \item Move $\rightarrow\rightarrow\uparrow$
+            \item Move $\rightarrow\rightarrow\uparrow$ to "next" HP node
             \item HP+200, Str+4, Agi+2
             \blitzballdetermination[true]{%
-                \item Move $\rightarrow$
+                \item Move $\rightarrow$ to Str node
                 \item Use Strength Sphere, Activate it
-                \item Move $\uparrow\leftarrow\leftarrow$ or $\nwarrow\nwarrow$
+                \item Move $\uparrow\leftarrow\leftarrow$ or $\nwarrow\nwarrow$ to Agi node in the center
             }{%
-                \item Move $\uparrow\leftarrow$
+                \item Move $\uparrow\leftarrow$ to Agi node in the center
             }
-            \item HP+200, Str+4, Agi+2
-            \item Move $\leftarrow$
+            \item Agi+2, HP+200, Str+4
+            \item Move $\leftarrow$ to Str node straight left
+            \item 24 Power Spheres, 11 Speed Sphere to stop farming them
             \item Str+4
         \end{itemize}
         \ifthenelse{\equal{\blitzresult}{win}}{%
@@ -71,19 +74,9 @@
     \end{itemize}
 \end{spheregrid}
 \begin{enumerate}[resume]
-    \item \sd, \cs[0:40], head to next screen
-    \item Head to Temple, \sd. \save.
+    \item Head to Temple, \save.
     \wincb
-    \item Jyscal Skip (Ignore if playing with Cutscene Remover):
-    \begin{itemize}
-        \item Speak to Tromell for \textbf{Shell Targe}
-        \item Walk into the wall to the right of Tromell
-        \item Move slightly to the right, turn around and Talk to Tromell while moving Right.
-        \item If successful, walk forward while mashing Shelinda's dialogue.
-        \item When dialogue finishes, walk up the stairs, push the man, and go through.
-        \item If Shelinda is not saying her dialogue, talk to one of the musicians
-    \end{itemize}
-    \item \sd, walk to Fayth room, \cs[2:10]
+    \item Walk up the stairs, directly to Fayth room
 \end{enumerate}
 \begin{battle}[3000]{Seymour}
     \begin{itemize}
@@ -105,6 +98,7 @@
     \end{itemize}
 \end{battle}
 \begin{battle}[18000]{Anima}
+    \textbf{Keep track of the steals, 6 Silence grenades would be ideal for Bikanel}
     \begin{itemize}
         \blitzballdetermination[true]{%
             \kimahrif Defend
@@ -130,7 +124,7 @@
         }
         \item \textit{If Tidus Misses:}
         \begin{itemize}
-            \item On Tidus' 4th turn switch him for \lulu
+            \item On Tidus' \nth{4} turn switch him for \lulu
             \luluf Phoenix Down dead character
             \enemyf Pain
             \switch{first survivor}{\tidus}
@@ -140,9 +134,9 @@
 \end{battle}
 \begin{battle}[6000]{Seymour}
     \begin{itemize}
-        \tidusf Phoenix Down \rikku\ if she died before Multi-Thundara.
+        \tidusf Phoenix Down \rikku\ if she died before Multi-Thundara
         \blitzballdetermination[true]{\tidusf Change Weapon to Sonic Steel}{}
-        \item Anyone: Defend until Multi-Thundara.
+        \item Anyone: Defend until Multi-Thundara
         \enemyf Multi-Thundara
         \tidusf Attack x2
     \end{itemize}
@@ -155,9 +149,11 @@
     \begin{itemize}
         \tidusf
         \begin{itemize}
-            \item Move $\leftarrow\leftarrow\leftarrow\leftarrow$
+            \item Move $\leftarrow\leftarrow\leftarrow\leftarrow$ to empty node on new circle
             \item HP+200, Str+4
-            \item Move $\leftarrow$
+            \item Check Power Spheres (need 21 after those two)
+            \item Move $\leftarrow$ to empty node on top of circle
+            \item Check Speed Spheres (need 11 before the next)
             \item Agi+2
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/Tidus_Post_Seymour}
@@ -190,11 +186,11 @@
         \item Go downstairs, place sphere in pillar
         \item Go upstairs, take the sphere at the top of the slope
         \item Place in last pillar
+        \item Do \textbf{not} touch the reset point while leaving
     \end{itemize}
 \end{trial}
 \begin{enumerate}[resume]
-    \item Go to temple entrance, \sd
-    \item Move south and go down the left path.
+    \item Flee from temple
     \blitzballdetermination[true]{%
         \item Try to not get caught by the Guados chasing you, if you get caught Flee
     }{%
@@ -252,7 +248,6 @@
     Guaranteed 2 Power Spheres, if Rare Drop from Wendigo +2 Power Spheres.
 \end{battle}
 \begin{enumerate}[resume]
-    \item Run up to \rikku, \sd, walk up to \yuna, \sd, \save, run past \kimahri\ and go to the hidden area to \pickup{Level 2 Key Sphere}
-    \item Run up to \auron\ and speak with him, \sd, walk back, \cs+\skippablefmv[1:00], (press Start immediately after skip), \sd\ in Dream Sequence
+    \item Run up to \rikku, \save, Run up to \yuna, run past \kimahri\ to \pickup{Level 2 Key Sphere}, run up to \auron\
 \end{enumerate}
 \lossnp\bothcb\bothnpsingle

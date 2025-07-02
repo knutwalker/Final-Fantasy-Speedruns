@@ -1,8 +1,8 @@
 \chapter{Kilika}
 
 \begin{enumerate}
-    \item \sd\ on exiting the boat, go up and left, \sd. \skippablefmv[2:00], (press Start immediately after skip) \sd
-    \item Exit inn, go right to \wakka, \sd. Go left and up to Kilika Woods, \sd
+    \item Go up and left and up
+    \item Exit inn, go right to \wakka, go left and up to Kilika Woods
 \end{enumerate}
 \begin{battle}{Lancet Tutorial}
     \begin{itemize}
@@ -11,16 +11,16 @@
         \switch{\kimahri}{\wakka}
         \wakkaf Defend
         \tidusf Attack
-        \item \textit{If Valefor died on Sin Fin:}
+        \item \textit{If Valefor didn't die on Sin Fin:}
+        \begin{itemize}
+            \luluf Fire
+        \end{itemize}
+        \item \textit{Else:}
         \begin{itemize}
             \switch{\lulu}{\yuna}
             \summon{\valefor}
             \valeforf Boost x2
             \valeforf Fire
-        \end{itemize}
-        \item \textit{Else:}
-        \begin{itemize}
-            \luluf Fire
         \end{itemize}
     \end{itemize}
 \end{battle}
@@ -47,9 +47,14 @@
 \end{equip}
 \begin{enumerate}[resume]
     \item \formation{\tidus}{\wakka}{\lulu}
+    \item Track Speed Sphere drops, this is your main source of them, but you can obtain the rest later
+    \item Track kills in this area (Overkills count as 2). Milestones are:
+    \begin{itemize}
+        \item \textbf{*Must Have*:} 5 kills, so that \tidus\ is guaranteed to get Haste before the Sahagins
+        \item \textit{Optional:} 17 kills, so that \tidus\ can get Haste before going to Luca
+        \item \textit{Highly Optional:} 11 kills, so that \wakka\ can get Str+2 before Luca, but only if he has an action against Sinspawn Geneaux.
+    \end{itemize}
     \item Continue up the hidden path, following the map. Fight encounters as described below.
-    \item Need 45 AP on \tidus, which is 5 kills (Overkills count as 2). This is your main source of Speed Spheres but you can obtain the rest later.
-    \item You can benefit from kills beyond the first 5 but do not intentionally farm encounters and stop killing if you have 17 kills already.
 \end{enumerate}
 \begin{encounters}
     \begin{itemize}
@@ -64,8 +69,7 @@
     \end{itemize}
 \end{encounters}
 \begin{enumerate}[resume]
-    \item \sd
-    \item \formation{\tidus}{\yuna}{\lulu}
+    \item \formation{\tidus}{\yuna}{\lulu} (\swap{\yuna}{\wakka})
     \item \save
 \end{enumerate}
 \begin{battle}[3000]{Sinspawn Geneaux}
@@ -89,7 +93,9 @@
     Guaranteed 4 Power Spheres, if Rare Drop from Geneaux +2 Power Spheres.
 \end{battle}
 \begin{enumerate}[resume]
-    \item \sd\ on stone steps and temple. go into temple. Walk up to \wakka\ and Pray. \sd\ inside temple and go up steps. Wait for lift and \sd.
+    \item Go into temple
+    \item Walk up to \wakka\ and Pray \nth{1} Option
+    \item Go up steps, lift down, buffer up
 \end{enumerate}
 \begin{trial}
     \begin{itemize}
@@ -100,7 +106,7 @@
         \item Touch glpyh
         \item Take the sphere from the next room
         \item Place it into the left holder
-        \item Take the glyph sphere from the pedestal
+        \item Take the glyph sphere from the pedestal (can grab from behind)
         \item Place it in the Fire Room
         \item Take the sphere that you put into the right holder
         \item Use it to open the door in the Fire Room
@@ -109,11 +115,39 @@
     \end{itemize}
 \end{trial}
 \begin{enumerate}[resume]
-    \item In Fayth room, \sd, speak to \wakka\ first. Try to leave room, \sd, name \ifrit
-    \item Hold down to exit temple, \cs[0:40], \sd
-    \item \formation{\tidus}{\wakka}{\lulu}
-    \item Go south through Kilika Woods, take the left path and \pickup{Luck Sphere}, referencing the above map.
+    \item Go to \wakka\, then \wakka\, leave room, name \ifrit, leave temple
+    \item \formation{\tidus}{\wakka}{\lulu} (optional, can switch in \lulu\ first battle)
+    \item Go south through Kilika Woods, take the left path and \pickup{Luck Sphere}, referencing the same map
+    \item \includegraphics[width=.1\columnwidth]{graphics/kilikamap}
     \item Exit Kilika Woods same way that you entered, treating fights the same way as above.
     \item Do the below Sphere Grid if \tidus\ has 5 S.Levels.
-    \item Go down and right to S.S. Winno. \sd
+\end{enumerate}
+\begin{spheregrid}
+    \begin{itemize}
+        \item Check your Power and Speed Spheres while menuing
+        \item 16 Power spheres and 16 Speed Spheres here to stop tracking them
+        \tidusf (5 S.Lvl)
+        \begin{itemize}
+            \item Move $\downarrow \searrow\searrow$ to Str Node
+            \item +1 Str, Haste, +20 MP
+        \end{itemize}
+        \sggraphics{.7}{.4}{graphics/haste}
+    \end{itemize}
+\end{spheregrid}
+\begin{enumerate}[resume]
+    \item Do the below Sphere Grid if \wakka\ has 7 S.Levels.
+\end{enumerate}
+\begin{spheregrid}
+    \begin{itemize}
+        \item This is the only \wakka\ grid we need, once you do this, you can ignore all future \wakka\ grids
+        \wakkaf (7 S.Lvl)
+        \begin{itemize}
+            \item Move $\downarrow\downarrow\rightarrow$ to Silence Attack
+            \item +2 Strength
+        \end{itemize}
+        \sggraphics{.7}{.4}{graphics/Wakka_Grid}
+    \end{itemize}
+\end{spheregrid}
+\begin{enumerate}[resume]
+    \item Go down and right to S.S. Winno.
 \end{enumerate}

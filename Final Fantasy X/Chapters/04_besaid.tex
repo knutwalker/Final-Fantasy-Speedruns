@@ -1,22 +1,24 @@
 \chapter{Besaid}
 
 \begin{enumerate}
-    \item \cs[0:30], \sd, \fmv. Swim to the beach and \sd. Walk up to \wakka, \sd, walk down to next screen.
-    \item Walk right to next screen, right again, down to \wakka.
+    \item Swim to the beach. Walk up to \wakka, walk down to next screen.
+    \item Walk Down+Right to next screen, Down+Right into Right again, Up to \wakka.
     \item Swim in the Lagoon. Watch out for invisible wall at the end.
 \end{enumerate}
 \begin{encounters}
     \begin{itemize}
         \item Piranhas:
         \begin{itemize}
-            \item Attack if 2 groups, or 3 if preempt.
-            \item Otherwise run away.
+            \item Attack if 2 groups, or 3 if preempt
+            \item Otherwise run away
+            \item Keep track of \tidus\ level
         \end{itemize}
     \end{itemize}
 \end{encounters}
 \begin{enumerate}[resume]
-    \item \sd\ next couple of screens. Walk to temple, \cs[0:30]. Walk to the Priest, \cs[1:30]. Walk to \wakka\ tent (middle right), talk to him and \sd
-    \item Walk to temple, \sd
+    \item Walk to temple until \cs\ is removed
+    \item Walk to \wakka\ tent (middle right), talk to him and \nth{1} option
+    \item Walk to temple
 \end{enumerate}
 \begin{trial}
     \begin{itemize}
@@ -31,17 +33,18 @@
     \end{itemize}
 \end{trial}
 \begin{enumerate}[resume]
-    \item \cs[1:00], \sd\ inside the Fayth room. \fmv+\cs[1:00]. \sd\ after the \fmv, walk down to Besaid Center. \cs[1:40], name \valefor.
-    \item \sd\ at party, walk to \yuna. \sd, respond with the \nth{2} option, ``She's not my type''. Talk to \wakka, go to sleep, \sd\ on the dream docks.
-    \item Walk out of tent, \sd.
-    \item Leave village, \sd\ through forced encounters (guaranteed 1 Power Sphere, Overkill on Dingo gives +1 Power Sphere), \sd\ during cutscene, avoid statue and leave the area by going up. \skippablefmv\ right before the \kimahri\ fight.
+    \item Walk down to Besaid Center, name \valefor
+    \item Walk to \yuna, talk to \wakka and \nth{1} option, \sd\ on the dream docks
+    \item Walk out of tent, leave village
+    \item \turbo\ through forced encounters (guaranteed 1 Power Sphere, Overkill on Dingo gives +1 Power Sphere)
+    \item Go up after statue scene
 \end{enumerate}
 \begin{spheregrid}
     \begin{itemize}
         \item \textit{If \tidus\ has 3 levels:}
         \begin{itemize}
-            \item Move $\leftarrow$
-            \item Get Cheer, Str +1
+            \item Move $\leftarrow$ to Def Node
+            \item Get Cheer, Str +1 (Careful, cursor is on Def+1 by default)
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/tiduscheer}
     \end{itemize}
@@ -50,7 +53,7 @@
     Each Attack does average of 125, count damage compared to average to know if you need to Potion or not.
     If you did the above sphere grid already, 6 Attacks will always kill.
     \begin{itemize}
-        \tidusf Attack x5
+        \tidusf Attack x5 (hold \turbo)
         \item \textit{If the Attacks did at least 7 damage over average:}
         \begin{itemize}
             \tidusf Attack
@@ -63,18 +66,18 @@
     \end{itemize}
 \end{battle}
 \begin{enumerate}[resume]
-    \item \sd, continue running
+    \item Continue running
 \end{enumerate}
 \begin{battle}{Garuda}
     \begin{itemize}
         \summon{\valefor}
-        \valeforf Thunder x6 to build \od
+        \valeforf Thunder x6 to build \od\ (\turbo\ break after Thunder [0:50])
     \end{itemize}
-    Guaranteed 1 Power Sphere.
+    Guaranteed 1 Power Sphere
 \end{battle}
 \begin{enumerate}[resume]
+    \item \formation{\tidus}{\yuna}{\lulu} (Get \wakka\ out)
     \item If you didn't do the above sphere grid yet, do it now (only get Cheer if Tidus has 2 levels).
-    \item \formation{\tidus}{\yuna}{\lulu}
 \end{enumerate}
 \begin{battle}{Garuda}
     \begin{itemize}
@@ -90,6 +93,17 @@
     Guaranteed 1 Power Sphere, Overkill on Dingo gives +1 Power Sphere.
 \end{encounters}
 \begin{enumerate}[resume]
-    \item At Besaid Beach \save, talk to the guy in red shorts for 400 Gil, go onto the boat.
+    \item At Besaid Beach \save
+    \item Talk to the guy in red shorts for 400 Gil, go onto the boat
 \end{enumerate}
+\begin{spheregrid}
+    \begin{itemize}
+        \item \textit{If not done before:}
+        \begin{itemize}
+            \item Move $\leftarrow$ to Def Node
+            \item Get Cheer, Str +1 (Careful, cursor is on Def+1 by default)
+        \end{itemize}
+        \sggraphics{.7}{.4}{graphics/tiduscheer}
+    \end{itemize}
+\end{spheregrid}
 \winnp\lossnp\bothnp

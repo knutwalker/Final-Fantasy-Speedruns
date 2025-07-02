@@ -1,6 +1,6 @@
 \chapter{Mt. Gagazet}
 \begin{enumerate}
-    \item Walk up, \cs[3:40], walk up, \sd
+    \item If \kimahri\ is not full, \save
 \end{enumerate}
 \begin{battle}{Biran and Yenke}
     \begin{itemize}
@@ -25,11 +25,11 @@
     \begin{itemize}
         \luluf
         \begin{itemize}
-            \item Move $\uparrow\uparrow$
-            \item Level 2 Key Sphere
-            \item Move $\downarrow x9$
+            \item Move $\uparrow\uparrow$ to Fire
+            \item Level 2 Key Sphere (\textbf{not} Lvl.1)
+            \item Move $\downarrow x9$ to center MDef node
             \item Level 3 Key Sphere
-            \item Move $\searrow\searrow$
+            \item Move $\searrow\searrow$ to middle Str node
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/lulu_grid}
     \end{itemize}
@@ -37,8 +37,8 @@
 \begin{spheregrid}[\textbf{4 Return Spheres}]
     \begin{itemize}
         \blitzballdetermination[true]{%
-            \yunaf Use Return Sphere to Str+4 Node
-            \yunaf Move to the empty node $\leftarrow\downarrow$
+            \yunaf Use Return Sphere to Str+4 Node above
+            \yunaf Move to the empty node $\leftarrow\downarrow$ where Tidus is
             \yunaf Str+4, Agi+2
             \item \sggraphics{.7}{.4}{graphics/4_returns_1}
         }{%
@@ -47,7 +47,7 @@
             \yunaf Str+4, Def+3
             \item \sggraphics{.7}{.4}{graphics/loss_4_returns_1}
         }
-        \tidusf Move to Armor Break $\rightarrow x3, \downarrow x5$
+        \tidusf Move to Armor Break $\rightarrow x3, \downarrow x5$ next to the center node
         \tidusf Armor Break
         \item \sggraphics{.7}{.4}{graphics/Tidus armor break 4 returns}
     \end{itemize}
@@ -55,7 +55,7 @@
 \begin{spheregrid}[\textbf{2 Return Spheres}]
     \begin{itemize}
         \blitzballdetermination[true]{%
-            \yunaf Move to the empty node $\leftarrow$
+            \yunaf Move to the empty node $\leftarrow$ where Tidus is
             \yunaf Str+4, Agi+2
             \item \sggraphics{.7}{.4}{graphics/2_and_2-1}
         }{%
@@ -65,12 +65,13 @@
         }
         \yunaf Friend Sphere to \lulu\ $\downarrow\downarrow$
         \yunaf Str+4, Str+4
-        \luluf Move $\nearrow\uparrow\uparrow$
+        \luluf Move $\nearrow\uparrow\uparrow$ to NE Str node
         \yunaf Friend Sphere to \lulu
         \yunaf Str+3, Agi+4, Agi+4
         \item \sggraphics{.7}{.4}{graphics/2_and_2}
-        \tidusf Return Sphere $\downarrow\searrow\searrow$ (or Hold $\searrow$) to Str+4 near Armor Break
+        \tidusf \textit{skip grid movements:} Return Sphere $\downarrow\searrow\searrow$ (or Hold $\searrow$) to Str+4 near Armor Break
         \tidusf Move $\nwarrow\leftarrow$ or $\leftarrow x3$
+        \tidusf \textit{Alternative:} Move to Armor Break $\rightarrow x3, \downarrow x5$ next to the center node
         \tidusf Armor Break
         \item \sggraphics{.7}{.4}{graphics/Tidus armor break 2 returns}
     \end{itemize}
@@ -110,26 +111,24 @@
     \end{itemize}
 \end{spheregrid}
 \begin{enumerate}[resume]
-    \item \textit{If you got \textbf{4 Return Spheres}:}
+    \item \textit{If you got \textbf{4 Return Spheres}}, Customize:
     \begin{itemize}
-        \item Customize:
-        \begin{itemize}
-            \auronf Shimmering Blade $\rightarrow$ First Strike
-            \yunaf Staff $\rightarrow$ First Strike
-        \end{itemize}
+        \auronf Shimmering Blade $\rightarrow$ First Strike
+        \yunaf Staff $\rightarrow$ First Strike
     \end{itemize}
-    \item \textit{If you got \textbf{2 Return Spheres}:}
+    \item \textit{If you got \textbf{2 Return Spheres}:}, Customize:
     \begin{itemize}
-        \item Customize:
-        \begin{itemize}
-            \yunaf Staff $\rightarrow$ First Strike
-        \end{itemize}
+        \yunaf Staff $\rightarrow$ First Strike
     \end{itemize}
     \item \textit{If you need need to charge \rikku's \od} \formation{\tidus}{\rikku}{\auron}, otherwise \formation{\tidus}{\kimahri}{\wakka}.
 \end{enumerate}
 \begin{enumerate}[resume]
-    \item Walk up, \sd, \cs[1:20], continue walking up, avoid the gravestones.
-    \item Charge \rikku's \od\ in an encounter with Mechs, Steal from the Mech Leader with \rikku\ and Escape with the others (optional if you have a Silence Grenade)
+    \item Walk up, avoid the gravestones.
+    \item Have either:
+    \begin{itemize}
+        \item A Silence Grenade
+        \item \rikku's \od\ (Add her to Party, on full mech encounter, Steal from Leader with \rikku, escape with the others)
+    \end{itemize}
     \item Follow the path around.
     \item \textit{If you had 2 or 4 \textbf{Return Spheres}} \formation{\tidus}{\yuna}{\auron}, otherwise \formation{\tidus}{\kimahri}{\wakka}
 \end{enumerate}
@@ -140,13 +139,14 @@
             \yunaf Attack
             \tidusf Haste \yuna
             \switch{\auron}{\rikku}
-            \rikkuf \od\ HP Sphere + Grenade or Silence Grenade
+            \rikkuf Use Silence Grenade or  \od\ HP Sphere + Grenade
             \summon{\bahamut}
             \bahamutf \textit{If you used a Silence Grenade} Impulse, otherwise Attack
+            \enemyf Banishes Bahamut
             \yunaf Attack
             \tidusf \textit{If you used a Silence Grenade} Attack once, otherwise Defend
             \rikkuf Defend
-            \item Check if you get the Overkill on Seymour Flux
+            \item Finishing Seymour with \yuna\ will be an Overkill, otherwise it's not. Keep track of this.
         \end{itemize}
         \item \textit{If you had 2 \textbf{Return Spheres}:}
         \begin{itemize}
@@ -165,11 +165,32 @@
 \end{battle}
 \begin{enumerate}[resume]
     \item \formation{\tidus}{\kimahri}{\auron}
-    \item \save\ if \bahamut\ was banished, Walk to the next screen. \skippablefmv[0:20], \sd, walk up to \tidus\ House, go into the center, \sd. Follow the boy outside, speak to him upstairs, \sd.
-    \item Walk up to the next screen, go up the steps. Go down the left path into the water, \sd, swim up. Go up the steps, play the minigame, return to the previous screen.
-    \item \tidus\ can attack Splashers for Power Spheres (only attack the 3 fish group): if you got 4 \textbf{Return Spheres} you need 4 Power Spheres; if you got 2 \textbf{Return Spheres} you need 1 Power Sphere, on 0 \textbf{Return Spheres} you don't need any Power Spheres.
-    \item Return to Save Sphere, go up and left, then go down the right path, swim up into the next screen. Complete the minigame, \rikku\ Green, \tidus\ Blue, \wakka\ Red. Return.
-    \item Go up left path, \sd, continue up the path, \save\ if \bahamut\ was banished and you didn't touch one earlier.
+    \item \save\ if \bahamut\ was banished, Walk to the next screen
+    \item Walk up to \tidus\ House, go into the center, walk up to the next screens
+    \item Go down the left path into the water, swim up. Go up the steps, play the minigame, return to the previous screen.
+    \item Throw at the \nth{3} narrowing of the \nth{2} wall
+    \item Sphere farming check, at this point you need
+    \begin{itemize}
+        \item \textit{If you had 4 Return Spheres}:
+        \begin{itemize}
+            \item 4 Power Spheres
+            \item 5 Speed Spheres
+        \end{itemize}
+        \item \textit{If you had 2 Return Spheres}:
+        \begin{itemize}
+            \item 1 Power Sphere
+            \item 5 Speed Spheres
+        \end{itemize}
+        \item \textit{If you had 0 Return Spheres}:
+        \begin{itemize}
+            \item 2 Speed Spheres (no more Power Spheres)
+        \end{itemize}
+        \item \tidus\ can attack Splashers in formation without any other fiends for Power Spheres
+        \item Other missing Spheres can be distilled inside Sin
+    \end{itemize}
+    \item Return to Save Sphere, go up and left, then go down the right path, swim up into the next screen.
+    \item Complete the minigame, \rikku\ Green, \tidus\ Blue, \wakka\ Red. Return.
+    \item Go up left path, \save\ if \bahamut\ was banished and you didn't touch one earlier.
     \item \formation{\tidus}{\yuna}{\wakka}. Go onto the next screen.
 \end{enumerate}
 \begin{battle}[40000]{Sanctuary Keeper}

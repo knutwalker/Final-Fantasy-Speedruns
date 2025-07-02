@@ -1,9 +1,10 @@
 \chapter{Inside Sin}
 \includegraphics{graphics/sinpath}
 \begin{enumerate}
-    \item \textit{If \rikku\ doesn't have \od} \formation{\tidus}{\auron}{\rikku}, otherwise \formation{\tidus}{\auron}{\kimahri}
-    \item Walk along the path, you can charge \rikku's \od\ on an encounter with a Behemoth King or Adamantoise (Escape with the others), flee from the rest.
-    \item Before Seymour Omnis, \formation{\tidus}{\auron}{\yuna}
+    \item \textit{If \rikku\ still doesn't have \od} \formation{\tidus}{\auron}{\rikku}, use Behemoth King or Adamantoise
+    \item \formation{\tidus}{\auron}{\kimahri}
+    \item Walk along the path, Flee encounters
+    \item Before Seymour Omnis, \formation{\tidus}{\auron}{\yuna} (swap \yuna\ back in)
     \item \textit{If you got \textbf{2 Return Spheres}:}
     \begin{itemize}
         \item Customize:
@@ -11,7 +12,7 @@
             \auronf Shimmering Blade $\rightarrow$ First Strike
         \end{itemize}
     \end{itemize}
-    \item Go up the steps, \sd
+    \item Go up the steps
 \end{enumerate}
 \begin{battle}[80000]{Seymour Omnis}
     \begin{itemize}
@@ -35,21 +36,36 @@
     \end{itemize}
 \end{battle}
 \begin{enumerate}[resume]
-    \item \sd, walk north.
+    \item \textit{If \rikku\ still doesn't have \od} \formation{\tidus}{\auron}{\rikku}, use Behemoth King or Adamantoise
     \item \formation{\tidus}{\kimahri}{\auron}
     \item You can charge \rikku's \od\ on an encounter with a Behemoth King, Adamantoise or Barbatos (Escape with the others), flee from the rest.
-    \item Turn left onto the bridge, go onto the next screen.
-    \item Complete the minigame, picking up the eggs and avoiding the crystals.
+    \item Turn left onto the bridge, go onto the next screen
+    \item Complete the minigame, picking up the eggs and avoiding the crystals
+    \item If you don't have enough S.Lvl for Spare Change:
+    \begin{itemize}
+        \item If you have a Special Sphere (rare drop from Seymour) reach it from \kimahri\ or \rikku\ and use the Special Sphere with \yuna
+        \item If you have a Return Sphere left and only missing one level, activate the MP node, Return to that, use last level to Move to HP node
+        \item If you don't have a Special Sphere, teach Spare Change to \kimahri\ or \rikku\ and use them
+        \begin{itemize}
+            \item \tidus\ could haste them, but it'll drain his MP, so you need to use an extra elixir or two
+            \item Especially if \tidus\ needs to use Zombie Strike, it costs 10 MP
+        \end{itemize}
+        \item Forego Spare Change all-together and use \yuna\ and \tidus\ to Attack
+        \begin{itemize}
+            \item They will likely miss a lot, so this will cost time
+            \item You won't die thanks to Auto-Life, this is just a time-loss
+        \end{itemize}
+    \end{itemize}
 \end{enumerate}
 \begin{spheregrid}
     \begin{itemize}
         \item \textit{If you got 2 or 4 \textbf{Return Spheres}:}
         \begin{itemize}
-            \item Move $\downarrow\downarrow$
+            \item Move $\downarrow\downarrow$ to Agi node on the edge
             \item Agi+2
-            \item Move $\leftarrow x5$
+            \item Move $\leftarrow x5$ to the Acc node
             \item Agi+4 (be careful to not activate the Acc+2 Node)
-            \item Move $\nwarrow$
+            \item Move $\nwarrow$ to Spare Change or above it
             \item Spare Change
             \item Attribute Sphere \kimahri's +4 Agi
         \end{itemize}
@@ -66,9 +82,9 @@
         \sggraphics{.7}{.4}{graphics/0_return_before_BFA}
         \tidusf \textit{If you didn't get a \textbf{Zombie Strike} weapon}:
         \begin{itemize}
-            \item Move $\uparrow x5$
+            \item Move $\uparrow x5$ to th HP sphere below Zombie Strike
             \item Level 4 Keysphere
-            \item Move $\uparrow$
+            \item Move $\uparrow$ into the now empty L4 node
             \item Zombie Attack
         \end{itemize}
         \sggraphics{.7}{.4}{graphics/Tidus_BFA}
@@ -81,11 +97,9 @@
         \begin{itemize}
             \item Equip Zombie Strike Weapon
         \end{itemize}
+        \item \textbf{Do not equip Zombie Strike Weapon} on the first strikers \tidus/\auron/\yuna !
     \end{itemize}
 \end{equip}
-\begin{enumerate}[resume]
-    \item Walk up to Jecht, \cs[4:30]
-\end{enumerate}
 \begin{battle}[180000]{Braska's Final Aeon}
     \begin{itemize}
         \switch{\yuna}{\rikku}
@@ -96,9 +110,6 @@
         \bahamutf Attack
     \end{itemize}
 \end{battle}
-\begin{enumerate}[resume]
-    \item \cs+\skippablefmv[4:00]
-\end{enumerate}
 \begin{battle}{Possessed Aeons}
     \begin{itemize}
         \item Spare Change as follows:
@@ -111,9 +122,6 @@
         \end{itemize}
     \end{itemize}
 \end{battle}
-\begin{enumerate}[resume]
-    \item \cs[1:40]
-\end{enumerate}
 \colend
 \begin{battle}[99999]{Yu Yevon}
     \begin{itemize}
@@ -124,14 +132,14 @@
         \end{itemize}
         \item \yuna\ Zombie Strike Weapon:
         \begin{itemize}
-            \yunaf Switch Weapon
+            \yunaf Switch Weapon to the Zombie Stike weapon
             \tidusf Switch Weapon
             \yunaf Attack
         \end{itemize}
         \item \tidus\ Zombie Strike Weapon:
         \begin{itemize}
             \yunaf Defend
-            \tidusf Change Weapon
+            \tidusf Change Weapon to the Zombie Strike weapon
             \tidusf Attack
         \end{itemize}
         \item \rikku\ Zombie Strike Weapon:
@@ -144,7 +152,7 @@
         \item \auron\ Zombie Strike Weapon:
         \begin{itemize}
             \switch{\yuna}{\auron}
-            \auronf Change Weapon
+            \auronf Change Weapon to the Zombie Strike Weapon
             \tidusf Defend
             \auronf Attack
         \end{itemize}

@@ -113,6 +113,11 @@
 
 \newcommand{\sd}{\textbf{SD}}
 
+\newcommand{\turbo}{\textbf{Turbo}}
+
+\newcommand{\Cancel}{\text{O}}
+\newcommand{\Confirm}{\text{X}}
+
 \newcommand{\cs}[1][]{\textbf{CS}%
     \ifthenelse{\isempty{#1}}{}{ (#1)}%
 }
@@ -161,7 +166,8 @@
 \createCharacter{ifrit}{OrangeRed}{Ifrit}{イフリート}
 
 
-\newcommand{\switch}[2]{\item Switch #1 for #2}
+\newcommand{\swap}[2]{Switch #1 for #2}
+\newcommand{\switch}[2]{\item \swap{#1}{#2}}
 \newcommand{\summon}[1]{\yunaf Summon #1}
 
 
@@ -203,7 +209,7 @@
             }
         }
     }
-\ 
+\
 }
 
 \newcommand{\sggraphics}[3]{\ifthenelse{\equal{\colstyle}{multi}}{\includegraphics[width=#1\columnwidth]{#3}}{\includegraphics[width=#2\columnwidth]{#3}}}
@@ -256,7 +262,7 @@
             }{
                 \newline
                 \ifthenelse{\isempty{#1}}{}{%
-                        \blitzwin: 
+                        \blitzwin:
                         \begin{itemize}
                             #1
                         \end{itemize}
@@ -269,13 +275,13 @@
                             #5
                         \end{itemize}
                         \sggraphics{#6}{#7}{#8}
-                    
-                    
+
+
                 }
             }
         }
     }
-\ 
+\
 }
 
 \setlength{\columnsep}{.5cm}
