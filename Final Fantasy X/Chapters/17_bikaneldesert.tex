@@ -1,25 +1,27 @@
 \chapter{Bikanel Desert}
 
 \begin{enumerate}
-    \item Walk up, \sd, walk up
+    \item Walk up
 \end{enumerate}
 \begin{battle}{Zu}
     \begin{itemize}
         \tidusf Attack
         \enemyf Attack
         \tidusf Equip Sonic Steel
-        \tidusf Defend until \lulu\ shows up
-        \auronf Defend until \lulu\ shows up
+        \item \tidus\ and \auron: Defend until \lulu\ shows up
         \item Flee
     \end{itemize}
 \end{battle}
 \begin{enumerate}[resume]
-    \item \sd, then run up to meet with \wakka, \sd. Go left to enter next screen, go right to join with \kimahri, \sd. Run back and then up to meet \rikku, \sd, \save
-    \item Need 6 (4 if you still have 2 Bomb Cores) in any combination of Silence Grenades, Sleeping Powders, Smoke Bombs
+    \item Next screen, right for \kimahri, run back to the left, next screen, \save
+    \item Need combined 4 or 6 of Silence Grenades, Sleeping Powders, Smoke Bombs
+    \item \textit{So far you should have:}
+    \begin{itemize}
+        \item 0-6 Silence Grenades from Anima steal
+        \item Potentially used 1 Bomb Core at Spherimorph, in which case you need 6 item in total
+    \end{itemize}
+    \item Try to steal at least 2 Sleeping Powder, it makes Bevelle Guards better
     \item If \rikku\ needs her \od, you can charge it on an encounter with a Zu or a Sand Worm (Escape with the others).
-\end{enumerate}
-\begin{enumerate}[resume]
-    \item Continue along path. On the next screen, go in north-west towards the save sphere, take the shortcut to the left. Go up to the next screen and fight the Sandragora fights. They're located in the Top Right Sinkhole with Chest, and then at the end of the path up and to the left, then go up and \sd
 \end{enumerate}
 \begin{encounters}
     \begin{itemize}
@@ -47,21 +49,22 @@
         \item \textit{Ambush:} Flee
     \end{itemize}
 \end{encounters}
+\begin{enumerate}[resume]
+    \item Continue along path. On the next screen, go in north-west towards the save sphere
+    \item Take the shortcut to the left. Go up to the next screen to the top right Sandragora pit
+\end{enumerate}
 \begin{battle}{Sandragora}
     \begin{itemize}
         \switch{\tidus}{\auron}
-        \auronf \od\ Shooting Star (Triangle, O, Square, X, $\leftarrow, \rightarrow$, X)
+        \auronf \od\ Shooting Star (Triangle, \Cancel, Square, \Confirm, $\leftarrow, \rightarrow$, \Confirm)
     \end{itemize}
 \end{battle}
-\begin{enumerate}[resume]
-    \item At the bottom of the pit, \pickup{Teleport Spheres}
-\end{enumerate}
 \blitzballdetermination{
     \begin{spheregrid}
         \begin{itemize}
             \tidusf
             \begin{itemize}
-                \item Move $\downarrow\downarrow$ (or $\downarrow$)
+                \item Move $\downarrow\downarrow$ (or $\downarrow$) to empty node above Str node
                 \item Str+4
             \end{itemize}
         \end{itemize}
@@ -69,12 +72,13 @@
     \end{spheregrid}
 }{}
 \begin{enumerate}[resume]
+    \item At the bottom of the pit, \pickup{Teleport Spheres}
+    \item You need 22 Power Spheres and 10 Speed Spheres \textbf{at this point} to be done farming them.
     \blitzballdetermination[true]{%
         \item \formation{\tidus}{\lulu}{\auron}
     }{%
         \item \formation{\tidus}{\rikku}{\auron}
     }
-    \item You need 22 Power Spheres and 10 Speed Spheres \textbf{at this point} to be done farming them.
     \item Sandragora skip:
     \begin{itemize}
         \item Go near the Sandragora pit that blocks the entrance to Home
@@ -83,6 +87,7 @@
         \item Go north and enter Home
         \item If Rikku is stuck running East walk South to trigger the Sandragora encounter
         \item If you have triggered the encounter, Flee and retry
+        \item If Rikku runs away, go back to a previous area to bring her back
     \end{itemize}
 \end{enumerate}
 \bothcb\winnpsingle\lossnpsingle
